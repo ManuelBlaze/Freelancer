@@ -1,0 +1,64 @@
+:root {
+    --oscuro: #212121;
+}
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    font-size: 62.5%;
+    /*REM*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    min-height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    font-size: 1.6rem;
+}
+
+.site-header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    /*FLEX*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-header {
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    .site-header nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.site-header nav a {
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.site-header nav a:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .site-header nav a {
+        margin-bottom: 0;
+    }
+}
