@@ -1,7 +1,9 @@
 :root {
+    /*Custom Propertie*/
     --primario: #FFc107;
     --secundario: #0097a7;
     --oscuro: #212121;
+    --anchoPantalla: 1200px;
 }
 
 
@@ -28,7 +30,7 @@ body {
 }
 
 .site-header nav {
-    max-width: 1200px;
+    max-width: var(--anchoPantalla);
     margin: 0 auto;
     padding: 2rem 0;
     /*FLEX*/
@@ -41,6 +43,17 @@ h1,
 h2,
 h3 {
     margin: 0;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 3rem;
 }
 
 .site-header {
@@ -123,4 +136,19 @@ h3 {
 
 .boton:hover {
     background-color: #067c8a;
+}
+
+.contenedor {
+    max-width: var(--anchoPantalla);
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.74);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.74);
+}
+
+.servicios {
+    margin: 3rem auto;
 }
