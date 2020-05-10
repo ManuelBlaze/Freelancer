@@ -1,4 +1,6 @@
 :root {
+    --primario: #FFc107;
+    --secundario: #0097a7;
     --oscuro: #212121;
 }
 
@@ -35,6 +37,12 @@ body {
     align-items: center;
 }
 
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
 .site-header {
     background-color: white;
 }
@@ -51,6 +59,11 @@ body {
     text-decoration: none;
     font-size: 2.2rem;
     margin-bottom: 2rem;
+    transition: color .1s ease-in-out;
+}
+
+.site-header nav a:hover {
+    color: var(--primario);
 }
 
 .site-header nav a:last-of-type {
@@ -61,4 +74,53 @@ body {
     .site-header nav a {
         margin-bottom: 0;
     }
+}
+
+.hero {
+    height: 45rem;
+    background-image: url(../img/hero.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.contenedor-hero {
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.contenedor-hero i {
+    color: var(--primario);
+    font-size: 5rem;
+}
+
+.boton {
+    text-decoration: none;
+    background-color: var(--secundario);
+    padding: 1rem 5rem;
+    color: white;
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.2rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.boton:hover {
+    background-color: #067c8a;
 }
