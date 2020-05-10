@@ -246,3 +246,28 @@ form legend {
     display: flex;
     justify-content: flex-end;
 }
+
+.footer-sitio {
+    background-color: var(--primario);
+    margin-top: 60px;
+    padding: 1.5rem 0 0 1.5rem;
+}
+
+.copy {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--oscuro);
+}
+
+span a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--oscuro);
+    transition: color .2s ease-in-out;
+}
+
+span a:hover {
+    color: darkred;
+    cursor: pointer;
+}
